@@ -3,14 +3,17 @@
  * Página de configuração do banco de dados
  */
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/..");
+$dotenv->load();
+
 /**
  * Conexão por PDO
  */
-define('__DB_HOST__', '');
-define('__DB_USER__', '');
-define('__DB_PASSWORD__', '');
+define('__DB_HOST__', $_ENV['MYSQL_HOST']);
+define('__DB_USER__', $_ENV['MYSQL_USER']);
+define('__DB_PASSWORD__', $_ENV['MYSQL_PASSWORD']);
 define('__DB_PORT__', '3306');
-define('__DB_DEFAULT_DATABASE__', '');
+define('__DB_DEFAULT_DATABASE__', $_ENV['MYSQL_DATABASE']);
 
 $pdo = new PDO('mysql:dbname='.__DB_DEFAULT_DATABASE__.';host='.__DB_HOST__.";charset=utf8", __DB_USER__, __DB_PASSWORD__);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
