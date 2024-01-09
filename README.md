@@ -1,13 +1,26 @@
-## Projeto Petshop
+# Petshop
 
-Esse projeto foi feito ao longo de um curso de um ano, foi meu primeiro contato com programação
+![Status Badge](https://img.shields.io/static/v1?label=STATUS&message=DROPPED&color=red&style=for-the-badge)
 
-## O que precisa saber para utilizar o projeto?
+Esse foi o meu primeiro projeto e contato com desenvolvimento, ele foi feito ao longo de um curso de um ano.
 
-- O projeto não foi finalizado
-- Esse projeto tem interação com um banco de dados, então há informações que precisam ser alteradas para diferentes usuários
-- Valores que devem ser alterados:
-- `lib/database.php`: todas as informações de conexão do banco de dados
-- `lib/config.php`: a constante que representa o email do usuário
-- `src/controller/emailController.php`: no objeto email, a senha deve ser alterada de acordo com a senha do email utilizada [obs: se o email não for @outlook, a conexão do servidor de email deve ser alterada, com os valores do respectivo email]
-- `lib/script_petshop.sql` e `lib/insert_cidade_petshop.sql`: são os scripts que criam o banco de dados com as tabelas prontas, e o insert de valores das cidades
+O backend foi feito em **PHP**, o banco de dados em **MySQL** e o frontend em **JavaScript**.
+
+O projeto não foi finalizado, quando eu comecei ele, não tinha conhecimento de git e github, então os commits não representam o verdadeiro progresso.
+
+---
+
+### Como utilizar?
+
+Para rodar esse projeto é necessário ter apenas o **Docker** instalado.
+
+```shell
+docker compose up
+```
+
+Depois que as imagens e o container serem criados e estiverem rodando, será preciso esperar mais um pouco para o banco de dados inicializar e rodas os scripts iniciais.
+
+> ###### Um dos scripts vai criar um usuário eu pode acessar as paginas de administração com as seguintes credenciais:
+>
+> **Email**: `admin@admin.com`
+> **Senha**: `admin`
