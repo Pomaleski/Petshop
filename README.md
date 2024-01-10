@@ -24,3 +24,5 @@ Depois que as imagens e o container serem criados e estiverem rodando, será pre
 >
 > **Email**: `admin@admin.com`
 > **Senha**: `admin`
+
+Agora é só acessar http://localhost:8080
