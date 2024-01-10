@@ -3,6 +3,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_DATABASE=petshop
+      - MYSQL_PORT=3306
     ports:
       - '8080:8080'
     volumes:

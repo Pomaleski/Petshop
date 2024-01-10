@@ -17,7 +17,7 @@ define('__AGENDAMENTO_TITULO__', 'Petshop GL');
 define('__EMAIL__', '');
 
 // require composer
-require __AGENDAMENTO_DIR__ . 'vendor/autoload.php';
+require(__AGENDAMENTO_DIR__ . 'vendor/autoload.php');
 
 // criando sessão
 session_start();
