@@ -14,9 +14,11 @@ O projeto não foi finalizado, quando eu comecei ele, não tinha conhecimento de
 
 Para rodar esse projeto é necessário ter apenas o **Docker** instalado.
 
-```shell
+```sh
 docker compose up
 ```
+
+**Algumas vezes ocorrem problemas na instalação do node, quando isso acontecer, basta rodar novamente o comando**
 
 Depois que as imagens e o container serem criados e estiverem rodando, será preciso esperar mais um pouco para o banco de dados inicializar e rodas os scripts iniciais.
 
