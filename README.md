@@ -18,8 +18,6 @@ Para rodar esse projeto é necessário ter apenas o **Docker** instalado.
 docker compose up
 ```
 
-**Algumas vezes ocorrem problemas na instalação do node, quando isso acontecer, basta rodar novamente o comando**
-
 Depois que as imagens e o container serem criados e estiverem rodando, será preciso esperar mais um pouco para o banco de dados inicializar e rodas os scripts iniciais.
 
 > ###### Um dos scripts vai criar um usuário eu pode acessar as paginas de administração com as seguintes credenciais:
