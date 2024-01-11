@@ -1,3 +1,4 @@
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
 <script>
     var agendamento = ({
         novo() {
@@ -75,9 +76,9 @@
         }
     })
     document.addEventListener('DOMContentLoaded', () => {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            //plugins: [ interactionPlugin ],
+				var calendarElement = document.querySelector('#calendar');
+        var calendar = new FullCalendar.Calendar(calendarElement, {
+            //plugins: [ dayGridPlugin ],
             initialView: 'dayGridMonth',
             locale: 'pt-br',
             dateClick: (info) => {
